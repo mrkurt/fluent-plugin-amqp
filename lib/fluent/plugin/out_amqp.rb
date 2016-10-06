@@ -145,7 +145,7 @@ module Fluent
         :hosts => hosts, :port => @port, :vhost => @vhost,
         :pass => @pass, :user => @user, :ssl => @ssl,
         :verify_ssl => @verify_ssl, :heartbeat => @heartbeat,
-        :tls                 => @tls,
+        :tls                 => @tls || nil,
         :tls_cert            => @tls_cert,
         :tls_key             => @tls_key,
         :verify_peer         => @tls_verify_peer
